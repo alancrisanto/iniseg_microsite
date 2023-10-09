@@ -1,0 +1,80 @@
+:root {
+
+	--open-sans: 'Open Sans', sans-serif;
+	--blue: 25, 81, 140;
+	--purple-blue: 34, 43, 63;
+	--main-blue: 25, 81, 140;
+	--dark-blue: 34, 44, 63;
+	--footer-blue: 4, 27, 51;
+	--light-blue: 122, 193, 254;
+	--blue-card: 30, 82, 116;
+	--blue-subMenu: 229, 235, 248;
+	--main-yellow: 251, 192, 9;
+	--dark-yellow: 244, 163, 32;
+	--red: 222, 29, 39;
+	--grey: 245, 243, 243;
+	--middle-grey: 221,221,221;
+	--dark-grey: 177, 175, 175;
+	--brillo: 255, 255, 255;
+	--border-color: 0, 0, 0, 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--open-sans);
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	color: rgba(var(--dark-blue), 1) !important;
+	max-width: 2200px;
+	margin: 0 auto !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+p {
+	margin: 0 !important;
+}
+
+li {
+	list-style: none !important;
+}
+
+ol {
+	padding-left: 0 !important;
+}
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin: 0.2rem 0;
+}
+
+figure {
+	margin: 0 !important;
+}
+
+footer {
+	background-color: rgb(var(--footer-blue));
+}
+
+select {
+	max-width: 100%;
+}

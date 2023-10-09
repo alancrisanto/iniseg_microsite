@@ -1,0 +1,220 @@
+@media only screen and (min-width: 544px) {}
+
+@media only screen and (min-width: 768px) {
+
+  /* HEADER IMG VIDEO */
+  .swiper-slide-header img {
+    aspect-ratio: 3/1;
+    max-height: 500px;
+  }
+
+   /* -- ### CONTAINER SECTION 1  */
+  /* -- form search */
+  .section-1-form {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    max-width: 40rem;
+    flex: 1;
+    margin-left: 2rem;
+  }
+
+  .section-1-label{
+    padding: 0 0 0 2rem;
+  }
+
+  .section-1-input {
+    flex: 1;
+    justify-content: space-between;
+    max-width: 30rem;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  #buscador {
+    flex: 1;
+  }
+
+  .section-1-form img {
+    max-width: 130px;
+    inset:unset;
+    margin: initial;
+    left: -5rem;
+  }
+  /* -- fin form search */
+
+  /* swiper cards cursos */
+  .swiperCards  {
+    display: none !important;
+  }
+
+  .section-1-flip-cards-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(178px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0 2rem 0 2rem;
+    justify-items: center;
+  }
+
+ /* -- ### FIN CONTAINER SECTION 1  */
+
+
+  /* -- ### CONTAINER SECTION 2  */
+  /* -- Cards Container */
+  .section-2-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .section-2-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-2-card-body {
+    flex-grow: 1;
+  }
+
+  /* -- Fin Cards Container */
+  /* -- ### FIN CONTAINER SECTION 2  */
+
+  /* -- ### CONTAINER SECTION 3  */
+  .section-3-contain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .section-3-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .icon-3 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 3  */
+
+  /* -- ### FIN CONTAINER SECTION 4  */
+  .section-4-swiper-slide {
+    width: 300px !important;
+  }
+
+  /* Figcaption */
+  .section-4-desc {
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 4  */
+
+  /* -- ### CONTAINER SECTION 5  */
+  .section-5-events-container {
+    flex-direction: row;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 5  */
+
+  /* -- ### CONTAINER SECTION 6  */
+  .section-6-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .section-6-desc {
+    max-width: 600px;
+  }
+
+  .container-section-6-link {
+    align-self: end;
+    padding-top: 2rem;
+  }
+
+  .section-6-formulario {
+    margin-top: 0;
+    max-width: 500px;
+    box-shadow: 22px 15px 0 0 rgba(0, 0, 0, 0.06);
+  }
+
+  /* -- ### FIN CONTAINER SECTION 6  */
+
+
+  /* -- ### CONTAINER SECTION 7  */
+  .section-7-images {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .section-7-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-desc {
+    padding: 0.85rem 1rem 1.5rem 1rem;
+  }
+
+  /* suscripcion */
+
+  .suscripcion {
+    gap: 0.5rem;
+    flex-direction: row;
+  }
+
+  .suscripcion input {
+    flex: 1;
+  }
+
+
+  /* -- ### FIN CONTAINER SECTION 7  */
+
+  /* -- ### CONTAINER SECTION 8  */
+  .accordion-body {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .acordion-card-body {
+    grid-column: 2/3;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .acordion-card-contact {
+    margin-top: 0;
+  }
+
+  .acordion-card-footer {
+    grid-column: 3/4;
+    align-self: center;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 8  */
+
+  /* -- ### CONTAINER SECTION 9  */
+  .section-9-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-9-card-icon {
+    right: 1rem;
+  }
+  /* -- ### FIN CONTAINER SECTION 9  */
+}
+
+@media only screen and (min-width: 820px) {}
+
+@media screen and (min-width: 994px) {}
