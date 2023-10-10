@@ -91,33 +91,16 @@
 
 .header-video-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 50% auto auto 0;
+  transform: translate(0, -50%);
   color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  text-align: left;
 }
 
 .header-video-text h1 {
-  font-size: clamp(1.75rem, 4vw, 4rem);
-  font-weight: 700;
-}
-
-.header-video-text h2 {
-  font-size: clamp(1.25rem, 3vw, 3rem);
-  font-weight: 700 !important;
-}
-
-.header-video-text h2 .header-video-sub1 {
-  font-weight: 300;
-  letter-spacing: 0.12rem;
-}
-
-.header-video-text h2 .header-video-sub2 {
-  font-size: clamp(1.65rem, 3.5vw, 4rem);
-  letter-spacing: 0.16rem;
+  font-size: clamp(1.65rem, 3.5vw, 3.25rem);
+  font-weight: 500;
+  padding: 2rem;
 }
 
 /* ### FIN HEADER VIDEO ###### */
@@ -1542,6 +1525,11 @@ input.search-box {
 }
 
 @media screen and (min-width: 375px) {
+
+  .header-video-text h1 {
+    font-size: clamp(1.95rem, 3.5vw, 3.25rem);
+  }
+
   /* -- ###  CONTAINER SECTION 6  */
   .section-6-input input,
   #phone {

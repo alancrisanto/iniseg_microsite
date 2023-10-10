@@ -8,6 +8,11 @@
     max-height: 500px;
   }
 
+  .header-video-text h1 {
+    width: min(73%, 1300px);
+    padding-left: 4rem;
+  }
+
    /* -- ### CONTAINER SECTION 1  */
   /* -- form search */
   .section-1-form {
