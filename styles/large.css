@@ -1,208 +1,27 @@
 @media only screen and (min-width: 1024px) {
+  /*--------------------------------------------------------------------
+#### HEADER IMG VIDEO
+---------------------------------------------------------------------*/
   .header-video-text {
     top: 60%;
   }
 
   .header-video:hover .swiper-button-prev-header,
-.header-video:hover .swiper-button-next-header {
-  padding: 1.8rem;
-}
-
-.header-video .swiper-button-next:after, .header-video .swiper-button-prev:after {
-  --swiper-navigation-size: 40px
-}
-
-  /* -- ### CONTAINER SECTION 1  */
-  /* Galeria cards cursos */
-  .section-1-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  .header-video:hover .swiper-button-next-header {
+    padding: 1.8rem;
   }
 
-  .section-1-flip-cards-container {
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    max-width: 800px;
+  .header-video .swiper-button-next:after,
+  .header-video .swiper-button-prev:after {
+    --swiper-navigation-size: 40px;
   }
-
-  /* form */
-  .section-1-form {
-    max-width: 50rem;
-  }
-
-  /* -- ### CONTAINER SECTION 1  */
-
-  /* -- ### CONTAINER SECTION 3  */
-  .contain-3-body .desplegar {
-    display: block !important;
-  }
-
-  .btnMore,
-  .btnLess {
-    display: none !important;
-  }
-
-  .section-3-icons {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  /* -- ### FIN CONTAINER SECTION 3  */
-
-  /* -- ###  CONTAINER SECTION 6  */
-  .section-6-container {
-    align-items: center;
-  }
-
-  .section-6-input {
-    max-width: 210px;
-    margin: 0.86rem 0 0 0;
-  }
-
-  .section-6-cursos {
-    max-width: 100%;
-  }
-
-  .section-6-desc {
-    height: 450px;
-  }
-
-  .form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  #cursoInteres {
-    max-width: 100%;
-  }
-
-  .form-group-container {
-    padding: 0 1rem;
-  }
-
-  .condiciones {
-    padding: 0 1rem;
-  }
-
-  .section-6-input input,
-  #phone {
-    width: 100%;
-  }
-
-  /* -- ### FIN CONTAINER SECTION 6  */
-
-  /* -- ### CONTAINER SECTION 7  */
-  .section-7-cards .section-7-card:last-child .card-desc {
-    height: auto;
-  }
-
-  .section-7-subscribe {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: left;
-  }
-
-  /* -- ### FIN CONTAINER SECTION 7  */
-
-  /* -- ###  CONTAINER SECTION 8  */
-
-  .location-map {
-    display: block;
-  }
-
-  .section-8-locations {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-
-  /* test */
-  .accordion-item {
-    border: 0 !important;
-  }
-
-  .accordion-collapse,
-  .accordion-body {
-    -webkit-display: none !important;
-    display: none !important;
-  }
-
-  .accordion-header {
-    background-color: transparent;
-    padding: 0;
-    border-bottom: 1px solid transparent;
-    transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
-  }
-  
-  .accordion-header svg:first-child {
-    transform: rotate(0deg);
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .accordion-header:hover {
-    background-color: rgb(var(--grey));
-    padding: 0.5rem;
-    border-bottom: 1px solid rgb(var(--middle-grey));
-    transition: padding 0.2s ease-in-out;
-  }
-
-  .accordion-header:hover svg:first-child{
-    transform: rotate(90deg);
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .country svg:last-child {
-    display: none;
-  }
-
-  /* -- ### FIN CONTAINER SECTION 8  */
-
-  /* -- ###  CONTAINER SECTION 9  */
-  .section-9-card-desc {
-    padding: 1rem;
-  }
-
-  /* -- ### FIN CONTAINER SECTION 9  */
 }
 
 @media screen and (min-width: 1280px) {
+  /*--------------------------------------------------------------------
+#### HEADER IMG VIDEO
+---------------------------------------------------------------------*/
   .header-video-text {
     gap: 2rem;
   }
-
-  /* -- ### CONTAINER SECTION 1  */
-  /* Galeria Cards Cursos */
-  .section-1-gallery {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .section-1-flip-cards-container {
-    grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
-    margin: 0 2rem;
-    max-width: 100%;
-  }
-
-  /* form */
-  .section-1-form {
-    max-width: 60rem;
-  }
-
-  /* Galeria Cards Cursos */
-  /* -- ### FIN CONTAINER SECTION 1  */
-
-  /* -- ###  CONTAINER SECTION 6  */
-  .section-6-formulario {
-    position: relative;
-  }
-
-  .section-6-formulario::after {
-    content: "";
-    position: absolute;
-    right: -30px;
-    top: 40px;
-    background-color: rgb(var(--footer-blue));
-    height: 450px;
-    width: 30px;
-  }
-
-  /* -- ### FIN CONTAINER SECTION 6  */
 }
