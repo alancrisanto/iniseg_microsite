@@ -28,7 +28,7 @@
   background-color: rgb(var(--grey));
   margin: 0.85rem 0;
   padding: 0.65rem;
-  max-height: 40px;
+  max-height: 45px;
 }
 
 .section-input input {
@@ -254,7 +254,7 @@ input.search-box {
 }
 
 @media only screen and (min-width: 1024px) {
-  .section-6-container {
+  .body-1-form {
     align-items: center;
   }
 
@@ -263,12 +263,8 @@ input.search-box {
     margin: 0.86rem 0 0 0;
   }
 
-  .section-6-cursos {
+  .form-cursos {
     max-width: 100%;
-  }
-
-  .section-6-desc {
-    height: 450px;
   }
 
   .form-group {

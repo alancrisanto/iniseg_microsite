@@ -9,10 +9,6 @@ const isIndexPage = currentPagePath === "/index.html" || currentPagePath === "/"
 // variables de lazy loading
 const images = document.querySelectorAll(".img-lazy");
 
-//  variables para activar border al div con input activo
-const sectionDiv = document.querySelector(".section-1-input");
-const input = document.querySelector("#buscador");
-
 // vaiables para mostrar resto de parrafo movil
 const btnMas = document.querySelector(".btnMore");
 const btnLess = document.querySelector(".btnLess");
@@ -22,7 +18,7 @@ const showText = document.querySelector(".desplegar");
 const select = document.querySelector(".section-select");
 
 // variables para aplicar funcion focus input section-6
-const input6 = document.querySelectorAll(".input-6");
+const input6 = document.querySelectorAll(".input-form");
 const sectionDiv6 = document.querySelectorAll(".section-input");
 
 // ------------------------------------- FUNCIONES -----------------------------------
@@ -91,6 +87,16 @@ const swiperHeader = new Swiper(".swiperHeader", {
 		enabled: true,
 	},
 });
+
+function focusInput(inputElement, div) {
+	inputElement.addEventListener("focus", () => {
+		div.style.border = "2px solid rgb(var(--main-yellow)) ";
+	});
+
+	inputElement.addEventListener("blur", () => {
+		div.style.border = "none";
+	});
+}
 
 // GENERAR LISTA DE PAÍSES EN SELECT OPTION
 const getPaises = async () => {

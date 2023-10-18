@@ -558,19 +558,20 @@
                 <div class="form-group">
                   <!-- Nombre -->
                   <div class="section-input">
-                    <input class="input-6" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input class="input-form" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                     <i class="bi bi-person-fill"></i>
                   </div>
                   <!-- Apellidos -->
                   <div class="section-input">
-                    <input class="input-6" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    <input class="input-form" type="text" name="apellidos" id="apellidos" placeholder="Apellidos"
+                      required>
                     <i class="bi bi-person-fill"></i>
                   </div>
                 </div>
                 <div class="form-group">
                   <!-- Email -->
                   <div class="section-input">
-                    <input class="input-6" type="email" id="email" name="email" placeholder="Email" required>
+                    <input class="input-form" type="email" id="email" name="email" placeholder="Email" required>
                     <i class="bi bi-envelope-fill"></i>
                   </div>
                   <!-- Teléfono -->
@@ -585,7 +586,7 @@
                         </svg>
                         <!-- <strong>+44</strong> -->
                       </div>
-                      <input class="input-6" type="tel" id="phone" name="tel" minlength="5" maxlength="14"
+                      <input class="input-form" type="tel" id="phone" name="tel" minlength="5" maxlength="14"
                         pattern="\+\d{2} [0-9]{4,12}" value="+34 " placeholder="Número de Teléfono" required>
                       <i class="bi bi-telephone-fill"></i>
                     </div>
@@ -600,14 +601,14 @@
                 <div class="form-group">
                   <!-- Países -->
                   <div class="section-input">
-                    <select class="section-select input-6" name="pais" id="pais" title="paises">
+                    <select class="section-select input-form" name="pais" id="pais" title="paises">
                       <option value="" selected disabled>Pais</option>
                       <!-- Lista de países generado dinámicamente paises.json -->
                     </select>
                   </div>
                   <!-- Nivel de Estudios -->
                   <div class="section-input">
-                    <select class="section-select input-6" name="estudios" id="estudios" title="nivel de estudios">
+                    <select class="section-select input-form" name="estudios" id="estudios" title="nivel de estudios">
                       <option value="" class="select-placeholder" selected disabled>Nivel de Estudios</option>
                       <option value="na">Sin Estudios</option>
                       <option value="escolar">Graduado Escolar o Similar</option>
@@ -626,8 +627,8 @@
                     </select>
                   </div>
                 </div>
-                <div class="section-input section-6-cursos">
-                  <select class="section-select input-6" name="cursoInteres" id="cursoInteres"
+                <div class="section-input form-cursos">
+                  <select class="section-select input-form" name="cursoInteres" id="cursoInteres"
                     title="opciones masters iniseg">
                     <option value="#" selected disabled>Curso de Interés</option>
                     <option value="master universitario">Máster Universitario en Seguridad Privada</option>
