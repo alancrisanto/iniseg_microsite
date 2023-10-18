@@ -1,9 +1,8 @@
-@media only screen and (min-width: 544px) {
-}
+@media only screen and (min-width: 544px) {}
 
 @media only screen and (min-width: 768px) {
 
-/*--------------------------------------------------------------------
+  /*--------------------------------------------------------------------
 #### HEADER IMG VIDEO
 ---------------------------------------------------------------------*/
 
@@ -16,10 +15,19 @@
     width: min(73%, 1300px);
     padding-left: 4rem;
   }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 1 
+--------------------------------------------------------------------
+*/
+
+  .head-1-box {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
-@media only screen and (min-width: 820px) {
-}
+@media only screen and (min-width: 820px) {}
 
-@media screen and (min-width: 994px) {
-}
+@media screen and (min-width: 994px) {}

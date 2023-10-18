@@ -92,6 +92,7 @@
   <link rel="stylesheet" href="styles/min.css">
   <link rel="stylesheet" href="styles/med.css">
   <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/form.css">
 
   <!-- SWIPER PARA CARRUSEL IMAGENES -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
@@ -505,15 +506,158 @@
   <main class="main-container">
     <section class="container-1">
       <div class="cotainer-1-head">
-        <div class="head-1-title"></div>
-        <div class="head-1-title"></div>
-        <div class="head-1-title"></div>
-        <div class="head-1-title"></div>
-        <div class="head-1-title"></div>
+        <div class="head-1-box">
+          <div class="head-1-title">
+            <p>Titulación</p>
+            <p>Título Universitario</p>
+          </div>
+          <div class="head-1-title">
+            <p>Modalidad</p>
+            <p>Online</p>
+          </div>
+          <div class="head-1-title">
+            <p>Convocatorias</p>
+            <p>Febrero y Octubre</p>
+          </div>
+          <div class="head-1-title">
+            <p>Duración</p>
+            <p>12 Meses</p>
+          </div>
+          <div class="head-1-title">
+            <p>ECTS</p>
+            <p>60</p>
+          </div>
+        </div>
       </div>
-      <div class="cotainer-1-body"></div>
+      <div class="cotainer-1-body">
+        <div class="body-1-desc">
+          <h3>Presentación</h3>
+          <p>El Máster Universitario en Seguridad Privada ha sido diseñado para formar profesionales expertos en la
+            gestión de empresas, departamentos y equipos de Seguridad Privada, desde un abordaje integral basado en la
+            normativa del sector.</p>
+          <p>Este programa académico capacita a los estudiantes tanto para definir estrategias y planes de seguridad
+            como para implementarlos y gestionarlos, además de contribuir al desarrollo de las habilidades propias de
+            los directivos empresariales, tales como comunicación, negociación y liderazgo.</p>
+          <p>Al cursar esta formación, el alumno conocerá de forma amplia la realidad de la Seguridad Privada; cuáles
+            son sus deberes en relación con la Seguridad Pública; cómo realizar auditorías y análisis de riesgos; cómo
+            crear planes de emergencia; cómo liderar la coordinación de un evento masivo o cómo implementar protocolos
+            de seguridad en organizaciones.</p>
+          <div class="body-1-btns">
+            <a href="#" target="_blank" rel="noopener noreferer">Programa PDF</a>
+            <a href="#" target="_blank" rel="noopener noreferer">Matricularme</a>
+          </div>
+        </div>
+        <div class="container-1-body-form">
+          <div class="body-1-form">
+            <h3>TE AYUDAMOS</h3>
+            <p>Solicita la ayuda que necesitas y un asesor se pondrá en contacto para ofrecerte una atención
+              personalizada.
+            </p>
+            <form class="formulario" id="form-becas" action="#" method="post">
+              <div class="form-group-container">
+                <div class="form-group">
+                  <!-- Nombre -->
+                  <div class="section-input">
+                    <input class="input-6" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <!-- Apellidos -->
+                  <div class="section-input">
+                    <input class="input-6" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- Email -->
+                  <div class="section-input">
+                    <input class="input-6" type="email" id="email" name="email" placeholder="Email" required>
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <!-- Teléfono -->
+                  <div class="section-input input-6-phone ">
+                    <div class="selected-option">
+                      <div>
+                        <span class="iconify" data-icon="flag:es-4x3"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <!-- <strong>+44</strong> -->
+                      </div>
+                      <input class="input-6" type="tel" id="phone" name="tel" minlength="5" maxlength="14"
+                        pattern="\+\d{2} [0-9]{4,12}" value="+34 " placeholder="Número de Teléfono" required>
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="options">
+                      <input type="text" class="search-box" placeholder="Busca País Por Nombre">
+                      <ol>
+                        <!-- Lista generada por js -->
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- Países -->
+                  <div class="section-input">
+                    <select class="section-select input-6" name="pais" id="pais" title="paises">
+                      <option value="" selected disabled>Pais</option>
+                      <!-- Lista de países generado dinámicamente paises.json -->
+                    </select>
+                  </div>
+                  <!-- Nivel de Estudios -->
+                  <div class="section-input">
+                    <select class="section-select input-6" name="estudios" id="estudios" title="nivel de estudios">
+                      <option value="" class="select-placeholder" selected disabled>Nivel de Estudios</option>
+                      <option value="na">Sin Estudios</option>
+                      <option value="escolar">Graduado Escolar o Similar</option>
+                      <option value="eso">ESO</option>
+                      <option value="fp1">FP1</option>
+                      <option value="fp2">FP2</option>
+                      <option value="medfp">Grado Medio FP</option>
+                      <option value="bachillerato">Bachillerato</option>
+                      <option value="prueba">Prueba Para Mayores de 25 años</option>
+                      <option value="diploma">Diplimatura Univesitaria</option>
+                      <option value="grado">Grado Universitario</option>
+                      <option value="licenciatura">Licenciatura Universitaria</option>
+                      <option value="postgrado">Postgrado</option>
+                      <option value="master">Máster</option>
+                      <option value="doctorado">Doctorado</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="section-input section-6-cursos">
+                  <select class="section-select input-6" name="cursoInteres" id="cursoInteres"
+                    title="opciones masters iniseg">
+                    <option value="#" selected disabled>Curso de Interés</option>
+                    <option value="master universitario">Máster Universitario en Seguridad Privada</option>
+                    <option value="master executive">Máster Executive en Seguridad Privada</option>
+                    <option value="master profesional">Máster Profesional en Seguridad Privada</option>
+                  </select>
+                </div>
+              </div>
+              <label for="condiciones" class="condiciones">
+                <input class="conditions" type="checkbox" name="condiciones" id="condiciones" required>
+                Al enviar este formulario, acepto estas condiciones legales
+              </label>
+              <button class="form-btn-becas" type="submit" form="form-becas">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="container-2"></section>
+    <section class="container-2">
+      <div class="container-2-body">
+        <div class="container-2-desc">
+          <h3>Plan de BECAS, AYUDAS Y FINANCIACIÓN</h3>
+          <p>En INISEG nos preocupamos por el futuro y por eso ponemos a tu disposición becas y ayudas, así como la
+            financiación necesaria para que nada te impida que recibas una formación de excelencia.
+          </p>
+          <a href="#" target="_blank" rel="noopener noreferer">SOLICITA INFORMACIÓN</a>
+        </div>
+        <div class="container-2-img"></div>
+      </div>
+    </section>
     <section class="container-3"></section>
     <section class="container-4"></section>
     <section class="container-5"></section>

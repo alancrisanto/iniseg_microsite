@@ -1,0 +1,313 @@
+/* Formulario */
+.body-1-form {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.body-1-form h3,
+.body-1-form p {
+  text-align: center;
+}
+
+.body-1-form h3 {
+  font-weight: 700;
+}
+
+.body-1-form p {
+  font-weight: 300;
+}
+
+.form-group-container {
+  margin: 1.5rem 0;
+}
+
+.section-input {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(var(--grey));
+  margin: 0.85rem 0;
+  padding: 0.65rem;
+  max-height: 40px;
+}
+
+.section-input input {
+  margin-right: 0.5rem;
+  max-width: 85%;
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+}
+
+.section-input input:focus,
+.section-input select:focus {
+  border: 0px solid transparent;
+  outline: none;
+}
+
+.section-input input,
+.section-input select {
+  border: 0px solid transparent;
+  flex: 1;
+  background-color: transparent;
+}
+
+.section-input input::placeholder,
+.section-input select {
+  font-size: clamp(0.75rem, 1.2vw, 0.9rem);
+}
+
+.section-select,
+.section-select option {
+  color: black;
+}
+
+.section-select:invalid,
+.section-select option[value=""] {
+  color: rgb(var(--dark-grey));
+}
+
+#phone {
+  max-width: 65%;
+}
+
+/* -- EStilos banderas teléfono */
+.input-6-phone {
+  position: relative;
+}
+
+.input-6-phone input:focus {
+  border: 0.1rem solid var(--main-yellow);
+}
+
+.selected-option {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-grow: 1;
+}
+
+.selected-option div {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 5px;
+  min-width: 2rem;
+}
+
+.selected-option div svg:last-child {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.selected-option div.active svg:last-child {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.input-6-phone .options {
+  position: absolute;
+  top: 3.5rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+  border: 1px solid rgb(var(--middle-grey));
+  z-index: 1;
+}
+
+.input-6-phone .options.active {
+  display: block;
+}
+
+.input-6-phone .options::before {
+  position: absolute;
+  content: "";
+  left: 1rem;
+  top: -1.2rem;
+  width: 0;
+  height: 0;
+  border: 0.6rem solid transparent;
+  border-bottom-color: var(--primary);
+}
+
+input.search-box {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+  max-width: 100% !important;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.input-6-phone ol {
+  list-style: none;
+  max-height: 23rem;
+  overflow: overlay;
+  border-top: 1px solid rgb(var(--middle-grey));
+}
+
+.input-6-phone ol::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.input-6-phone ol::-webkit-scrollbar-thumb {
+  width: 0.4rem;
+  height: 3rem;
+  background-color: #ccc;
+  border-radius: 0.4rem;
+}
+
+.input-6-phone ol li {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.input-6-phone ol li.hide {
+  display: none;
+}
+
+.input-6-phone ol li:not(:last-child) {
+  border-bottom: 0.1rem solid #eee;
+}
+
+.input-6-phone ol li:hover {
+  background-color: lightcyan;
+}
+
+.input-6-phone ol li .country-name {
+  margin-left: 0.4rem;
+}
+
+/* Fin Estilos banderas teléfono */
+
+/* condiciones */
+.condiciones {
+  font-size: 0.8rem;
+}
+
+/* botón */
+.form-btn-becas {
+  border: 0;
+  color: white;
+  background-color: rgb(var(--main-yellow));
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1.5rem auto;
+  width: 85%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-btn-becas:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+}
+
+.form-btn-becas::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(var(--red));
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 600ms;
+}
+
+.btn-matricula:hover a {
+  color: white;
+}
+
+.form-btn-becas:hover::before {
+  width: 250%;
+}
+
+@media screen and (min-width: 375px) {
+
+  /* -- ###  CONTAINER SECTION 6  */
+  .section-input input,
+  #phone {
+    max-width: 100%;
+  }
+
+  /* -- ### FIN CONTAINER SECTION 6  */
+}
+
+@media only screen and (min-width: 768px) {
+  .body-1-form {
+    margin-top: 0;
+    max-width: 500px;
+    box-shadow: 22px 15px 0 0 rgba(0, 0, 0, 0.06);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-6-container {
+    align-items: center;
+  }
+
+  .section-input {
+    max-width: 210px;
+    margin: 0.86rem 0 0 0;
+  }
+
+  .section-6-cursos {
+    max-width: 100%;
+  }
+
+  .section-6-desc {
+    height: 450px;
+  }
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #cursoInteres {
+    max-width: 100%;
+  }
+
+  .form-group-container {
+    padding: 0 1rem;
+  }
+
+  .condiciones {
+    padding: 0 1rem;
+  }
+
+  .section-input input,
+  #phone {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .body-1-form {
+    position: relative;
+  }
+
+  .body-1-form::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 40px;
+    background-color: rgb(var(--footer-blue));
+    height: 450px;
+    width: 30px;
+  }
+}
