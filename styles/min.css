@@ -111,7 +111,7 @@
 #### COMMON RULES 
 ---------------------------------------------------------------------*/
 .cotainer-1-body,
-.container-2 {
+.container-2-desc {
   padding: 2rem;
 }
 
@@ -219,13 +219,13 @@
   width: 0;
   height: 100%;
   transition: width 600ms;
-  background-color: red;
+  background-color: rgb(var(--red));
   transform: skew(45deg);
   z-index: -1;
 }
 
 .body-1-btns a:hover::before {
-  width: 130%;
+  width: 140%;
 }
 
 .body-1-btns a:hover {
@@ -242,10 +242,6 @@
 
 .container-2 {
   background-color: rgb(var(--middle-grey));
-}
-
-.container-2-desc {
-  padding: 0 0 2rem 0;
 }
 
 .container-2-desc h3 {
