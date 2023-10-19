@@ -108,6 +108,14 @@
 }
 
 /*--------------------------------------------------------------------
+#### COMMON RULES 
+---------------------------------------------------------------------*/
+.cotainer-1-body,
+.container-2 {
+  padding: 2rem;
+}
+
+/*--------------------------------------------------------------------
 #### MAIN  
 ---------------------------------------------------------------------*/
 
@@ -148,10 +156,6 @@
   font-weight: 700;
 }
 
-.cotainer-1-body {
-  padding: 2rem;
-}
-
 .body-1-desc {
   padding: 0 0 2rem 0;
 }
@@ -167,19 +171,11 @@
   padding: 0 0 2rem 0;
 }
 
-.body-1-desc p {
-  font-size: clamp(0.95rem, 1vw, 1.2rem);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.56px;
-  text-transform: capitalize;
-}
-
 .body-1-btns {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 2rem 0 0 0;
 }
 
 .body-1-btns a {
@@ -232,6 +228,67 @@
   box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
   transform: scale(1.035);
 }
+
+/* 
+--------------------------------------------------------------------
+### CONTAINER 2
+--------------------------------------------------------------------
+*/
+
+.container-2 {
+  background-color: rgb(var(--middle-grey));
+}
+
+.container-2-desc h3 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(1.65rem, 2.5vw, 2.67rem);
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  padding: 0 0 1.5rem 0;
+}
+
+.container-2-desc p {
+  padding: 0 0 1.5rem 0;
+}
+
+.container-2-desc a {
+  font-size: clamp(1rem, 2vw, 1.33rem);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.64px;
+  color: rgb(var(--dark-blue));
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0.5rem 0.75rem;
+  margin-left: -0.75rem;
+}
+
+.container-2-desc a:hover {
+  color: white;
+}
+
+.container-2-desc a:hover svg path {
+  fill: rgb(var(--dark-blue));
+}
+
+.container-2-desc a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-radius: 30em;
+  inset: 0;
+  background-color: rgb(var(--main-yellow));
+  transition: 0.5s ease;
+  z-index: -1;
+}
+
+.container-2-desc a:hover::before {
+  width: 100%;
+}
+
 
 
 
