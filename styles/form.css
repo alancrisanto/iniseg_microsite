@@ -264,6 +264,7 @@ input.search-box {
 @media only screen and (min-width: 1024px) {
   .body-1-form {
     align-items: center;
+    max-width: unset;
   }
 
   .section-input {

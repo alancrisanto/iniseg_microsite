@@ -1,4 +1,14 @@
-@media only screen and (min-width: 544px) {}
+@media only screen and (min-width: 544px) {
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 1 
+--------------------------------------------------------------------
+*/
+  .body-1-btns {
+    flex-direction: row;
+  }
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -22,13 +32,13 @@
 --------------------------------------------------------------------
 */
 
+  .cotainer-1-head {
+    padding: 1rem;
+  }
+
   .head-1-box {
     display: flex;
     gap: 2rem;
-  }
-
-  .body-1-btns {
-    flex-direction: row;
   }
 
   .container-1-body-form {
