@@ -227,10 +227,6 @@ input.search-box {
   transition: width 600ms;
 }
 
-.btn-matricula:hover a {
-  color: white;
-}
-
 .form-btn-becas:hover::before {
   width: 250%;
 }

@@ -152,6 +152,88 @@
   padding: 2rem;
 }
 
+.body-1-desc {
+  padding: 0 0 2rem 0;
+}
+
+.body-1-desc h3 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(1.65rem, 2.5vw, 2.67rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+  padding: 0 0 2rem 0;
+}
+
+.body-1-desc p {
+  font-size: clamp(0.95rem, 1vw, 1.2rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: capitalize;
+}
+
+.body-1-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.body-1-btns a {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 0.87rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.body-1-btns a:first-child {
+  color: rgb(var(--dark-blue));
+  background-color: rgb(var(--main-yellow));
+}
+
+.body-1-btns a:first-child:hover {
+  color: white;
+}
+
+.body-1-btns a:last-child {
+  color: white;
+  background-color: rgb(var(--dark-blue));
+}
+
+.body-1-btns a::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 -2rem;
+  width: 0;
+  height: 100%;
+  transition: width 600ms;
+  background-color: red;
+  transform: skew(45deg);
+  z-index: -1;
+}
+
+.body-1-btns a:hover::before {
+  width: 130%;
+}
+
+.body-1-btns a:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+  transform: scale(1.035);
+}
+
+
 
 
 
