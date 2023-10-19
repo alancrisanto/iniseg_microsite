@@ -246,7 +246,18 @@ input.search-box {
 @media only screen and (min-width: 768px) {
   .body-1-form {
     margin-top: 0;
-    max-width: 500px;
+    max-width: 550px;
+  }
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #pais,
+  #estudios {
+    width: 100%;
   }
 }
 
@@ -256,18 +267,11 @@ input.search-box {
   }
 
   .section-input {
-    max-width: 210px;
     margin: 0.86rem 0 0 0;
   }
 
   .form-cursos {
     max-width: 100%;
-  }
-
-  .form-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
   }
 
   #cursoInteres {

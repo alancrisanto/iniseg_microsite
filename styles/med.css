@@ -26,6 +26,15 @@
     display: flex;
     gap: 2rem;
   }
+
+  .body-1-btns {
+    flex-direction: row;
+  }
+
+  .container-1-body-form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 820px) {}
