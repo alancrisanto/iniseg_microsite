@@ -116,3 +116,23 @@ getPaises();
 for (let i = 0; i < input6.length; i++) {
 	focusInput(input6[i], sectionDiv6[i]);
 }
+
+// TABS INFO CURSO
+
+const tabs = document.querySelectorAll(".tab-btn");
+const contentTab = document.querySelectorAll(".content-tab");
+
+tabs.forEach((tab, index) => {
+	tab.addEventListener("click", () => {
+		// Remueve todas las clases active de los tabs
+		tabs.forEach((tb) => tb.classList.remove("active"));
+		// Añade el active al tab seleccionado
+		tab.classList.add("active");
+		//Remueve la clase active de todos los contents
+		contentTab.forEach((contTab) => {
+			contTab.classList.remove("active");
+		});
+		// Añade la clase active al content seleccionado
+		contentTab[index].classList.add("active");
+	});
+});
