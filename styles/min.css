@@ -308,6 +308,7 @@
   flex-direction: column;
   align-items: start;
   gap: 0.5rem;
+  margin: 0 0 2rem 0;
 }
 
 /* li */
@@ -339,6 +340,7 @@
 
 .tab-btn.active {
   border-bottom: transparent;
+  font-weight: 700;
 }
 
 /* body */
@@ -351,6 +353,11 @@
   display: block;
 }
 
+/* content box */
+.content-tab-box {
+  background-color: rgb(var(--middle-grey));
+  padding: 1rem;
+}
 
 
 
