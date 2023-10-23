@@ -300,6 +300,12 @@
 ### CONTAINER 3
 --------------------------------------------------------------------
 */
+
+.container-3-body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* ul */
 .tabs-list {
   padding: 0;
@@ -319,6 +325,7 @@
   border-bottom: 3px solid rgb(var(--dark-grey));
   transition: border-bottom 600ms;
   position: relative;
+  cursor: pointer;
 }
 
 .tab-btn::after {
@@ -343,8 +350,7 @@
   font-weight: 700;
 }
 
-/* body */
-
+/* head */
 .content-tab {
   display: none;
 }
@@ -353,10 +359,51 @@
   display: block;
 }
 
+/* main */
+
+.container-3-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-3-main img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+
 /* content box */
 .content-tab-box {
   background-color: rgb(var(--middle-grey));
   padding: 1rem;
+}
+
+.alumno-info h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: capitalize;
+  padding: 1rem 0 1rem 0;
+}
+
+.alumno-desc p strong,
+.alumno-desc-info p strong {
+  font-weight: 500;
+}
+
+.alumno-desc {
+  padding: 0 0 0 1rem;
+}
+
+.alumno-desc-info ul {
+  padding: 1rem 0 0 2rem;
+}
+
+.alumno-desc-info ul li {
+  font-size: clamp(0.95rem, 1vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.56px;
+  list-style: disc !important;
 }
 
 
