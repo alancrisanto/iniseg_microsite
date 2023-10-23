@@ -242,7 +242,7 @@
 */
 
 .container-2 {
-  background-color: rgb(var(--middle-grey));
+  background-color: rgb(var(--grey));
 }
 
 .container-2-desc h3 {
@@ -359,6 +359,14 @@
   display: block;
 }
 
+.content-tab h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: capitalize;
+  padding: 1rem 0 1rem 0;
+}
+
 /* main */
 
 .container-3-main {
@@ -374,16 +382,8 @@
 
 /* content box */
 .content-tab-box {
-  background-color: rgb(var(--middle-grey));
+  background-color: rgb(var(--grey));
   padding: 1rem;
-}
-
-.alumno-info h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.64px;
-  text-transform: capitalize;
-  padding: 1rem 0 1rem 0;
 }
 
 .alumno-desc p strong,
@@ -391,20 +391,25 @@
   font-weight: 500;
 }
 
-.alumno-desc {
+.alumno-desc,
+.titulo-content p {
   padding: 0 0 0 1rem;
 }
 
-.alumno-desc-info ul {
+.alumno-desc-info ul,
+.profesores ul {
   padding: 1rem 0 0 2rem;
 }
 
-.alumno-desc-info ul li {
+.alumno-desc-info ul li,
+.profesores ul li {
   font-size: clamp(0.95rem, 1vw, 1.2rem);
   font-weight: 300;
   letter-spacing: 0.56px;
   list-style: disc !important;
 }
+
+
 
 
 
