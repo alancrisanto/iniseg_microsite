@@ -112,8 +112,16 @@
 ---------------------------------------------------------------------*/
 .cotainer-1-body,
 .container-2-desc,
-.container-3 {
+.container-3,
+.container-5 {
   padding: 2rem;
+}
+
+.cotainer-1-body,
+.container-2-body,
+.container-4-body {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /*--------------------------------------------------------------------
@@ -130,11 +138,6 @@
 ### CONTAINER 1 
 --------------------------------------------------------------------
 */
-
-.cotainer-1-body {
-  max-width: 1280px;
-  margin: 0 auto;
-}
 
 .cotainer-1-head {
   background-color: rgba(var(--grey));
@@ -188,11 +191,8 @@
   padding: 0.5rem 1rem;
   text-align: center;
   font-size: 0.87rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.56px;
-  text-transform: capitalize;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -409,8 +409,88 @@
   list-style: disc !important;
 }
 
+/* 
+--------------------------------------------------------------------
+### CONTAINER 4
+--------------------------------------------------------------------
+*/
 
+.container-4 {
+  background: rgb(var(--footer-blue));
+  background-image: url("../assets/images/cards/banner-ciber.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.container-4-body {
+  text-align: center;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.container-4-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container-4-head p {
+  padding: 0 1rem;
+}
+
+.container-4-head p span {
+  font-weight: 700;
+}
+
+.container-4-main h3 {
+  text-align: center;
+  font-size: clamp(1.35rem, 3vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 1.52px;
+  padding: 2rem 0;
+}
+
+.container-4-main a {
+  color: rgb(var(--dark-blue));
+  background-color: rgb(var(--main-yellow));
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.56px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.container-4-main a::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  transition: width 600ms;
+  background-color: rgb(var(--red));
+  transform: skew(45deg);
+  z-index: -1;
+}
+
+.container-4-main a:hover::before {
+  width: 140%;
+}
+
+.container-4-main a:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+  transform: scale(1.035);
+  color: white;
+}
 
 
 

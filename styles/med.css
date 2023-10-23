@@ -57,8 +57,6 @@
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
     gap: 2rem;
-    max-width: 1280px;
-    margin: 0 auto;
   }
 
   .container-2-body img {
@@ -87,6 +85,27 @@
     z-index: 1;
     border-radius: 1rem;
   }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 4
+--------------------------------------------------------------------
+*/
+
+  .container-4-head {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .container-4-head p:not(:last-child) {
+    border-right: 1px solid white;
+  }
+
+  .container-4-main h3 {
+    padding: 4rem 0;
+  }
+
 }
 
 @media only screen and (min-width: 820px) {}
