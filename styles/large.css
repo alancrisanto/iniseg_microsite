@@ -41,12 +41,14 @@
 
   /* 
 --------------------------------------------------------------------
-### CONTAINER 6
+### CONTAINER 6 - CONTAINER 7 HEAD
 --------------------------------------------------------------------
 */
 
-  .container-6-body h3,
-  .container-6-body p:first-child {
+  .container-6-head h3,
+  .container-7-head h3,
+  .container-6-head p,
+  .container-7-head p {
     text-align: center;
   }
 
