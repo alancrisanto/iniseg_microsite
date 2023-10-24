@@ -116,6 +116,18 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 6
+--------------------------------------------------------------------
+*/
+
+  .container-6-main {
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    gap: 1rem;
+  }
+
 }
 
 @media only screen and (min-width: 820px) {}

@@ -113,7 +113,8 @@
 .cotainer-1-body,
 .container-2-desc,
 .container-3,
-.container-5 {
+.container-5,
+.container-6 {
   padding: 2rem;
 }
 
@@ -543,6 +544,23 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.48px;
+}
+
+/* 
+--------------------------------------------------------------------
+### CONTAINER 6
+--------------------------------------------------------------------
+*/
+
+.container-6-body {
+  padding: 0 0 2rem 0;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-6-main {
+  display: grid;
+  padding: 2rem 0;
 }
 
 
