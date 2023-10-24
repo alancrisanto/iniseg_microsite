@@ -28,6 +28,30 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 5
+--------------------------------------------------------------------
+*/
+
+  .container-5-head h3 {
+    text-align: center;
+  }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 6 - CONTAINER 7 HEAD
+--------------------------------------------------------------------
+*/
+
+  .container-6-head h3,
+  .container-7-head h3,
+  .container-6-head p,
+  .container-7-head p {
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {

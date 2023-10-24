@@ -136,3 +136,26 @@ tabs.forEach((tab, index) => {
 		contentTab[index].classList.add("active");
 	});
 });
+
+// SWIPER
+// Docentes
+var swiperDocentes = new Swiper(".swiperDocentes", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	centeredSlides: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		520: {
+			slidesPerView: 2,
+		},
+		960: {
+			slidesPerView: 3,
+		},
+	},
+});

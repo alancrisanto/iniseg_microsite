@@ -89,3 +89,7 @@ h3 {
 	letter-spacing: 1.28px;
 	padding: 0 0 2rem 0;
 }
+
+p strong {
+	font-weight: 500;
+}
