@@ -697,6 +697,44 @@
   transform: scale(1.035);
 }
 
+.container-7-foot {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.container-7-foot a {
+  background-color: rgb(var(--main-yellow));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+}
+
+.container-7-foot a::after {
+  position: absolute;
+  content: "";
+  left: -2rem;
+  bottom: 0;
+  background-color: rgb(var(--red));
+  width: 0;
+  transform: skew(45deg);
+  transition: width 600ms;
+  height: 100%;
+  z-index: -1;
+}
+
+.container-7-foot a:hover::after {
+  width: 200%;
+}
+
+.container-7-foot a:hover {
+  outline: 2px solid white;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+  transform: scale(1.035);
+}
 
 /* .card-content-btn {
   align-self: end;
