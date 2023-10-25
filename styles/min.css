@@ -568,15 +568,33 @@
 ### CONTAINER 7
 --------------------------------------------------------------------
 */
-
 .container-7-main {
   margin: 2rem 0;
 }
 
 /* swiper cards */
+.swiper-container-docentes {
+  max-width: 1024px;
+}
+
+.swiperDocentes {
+  padding: 2.5rem 0;
+  /* background-color: rgb(139, 121, 255); */
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-cards-docentes {
+  display: grid !important;
+  grid-template-rows: 1fr !important;
+  grid-auto-flow: column !important;
+}
+
 .slide-card-docentes {
   text-align: center;
-  max-width: 325px;
+  max-width: 350px;
+  display: flex !important;
+  flex-direction: column;
 }
 
 .slider-card-image {
@@ -609,25 +627,80 @@
   background-color: rgb(var(--grey));
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1.5rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 1.5rem;
+  flex: 1;
+  border: 0px solid #000;
+  opacity: 0.9;
+  background: linear-gradient(0deg, #F5F3F3 0%, #F5F3F3 100%), #F5F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card-content-title {
+  padding: 0 0 0.5rem 0;
+  /* border-bottom: 2px solid rgb(var(--pseudo-color-card)); generado por javascript */
+}
 
-.swiperDocentes {
-  padding: 2rem;
-  background-color: rgb(139, 121, 255);
-  width: 100%;
+.card-content-desc,
+.card-content-title {
+  flex: 1;
+}
+
+.card-content-desc p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-content-btn {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.card-content-btn a {
+  background-color: rgb(var(--dark-blue));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-content-btn a::after {
+  content: "";
+  width: 0;
+  left: -2rem;
+  bottom: 0;
+  background-color: rgb(var(--red));
   height: 100%;
+  transform: skew(45deg);
+  transition: width 600ms;
+  z-index: -1;
+  position: absolute;
 }
 
-/* .slide-card-docentes {
-  background-color: aqua;
+
+.card-content-btn a:hover::after {
+  width: 200%;
+}
+
+.card-content-btn a:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+  transform: scale(1.035);
+}
+
+
+/* .card-content-btn {
+  align-self: end;
 } */
-
-
 
 
 /* --************************************************************--- */

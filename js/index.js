@@ -21,6 +21,14 @@ const select = document.querySelector(".section-select");
 const input6 = document.querySelectorAll(".input-form");
 const sectionDiv6 = document.querySelectorAll(".section-input");
 
+// TABS INFO CURSO
+const tabs = document.querySelectorAll(".tab-btn");
+const contentTab = document.querySelectorAll(".content-tab");
+
+// Color border bottom docentes cards
+const docentesTitle = document.querySelectorAll(".card-content-title");
+// console.log("docentes", docentesTitle);
+
 // ------------------------------------- FUNCIONES -----------------------------------
 
 // LAZY LOADING
@@ -118,10 +126,6 @@ for (let i = 0; i < input6.length; i++) {
 }
 
 // TABS INFO CURSO
-
-const tabs = document.querySelectorAll(".tab-btn");
-const contentTab = document.querySelectorAll(".content-tab");
-
 tabs.forEach((tab, index) => {
 	tab.addEventListener("click", () => {
 		// Remueve todas las clases active de los tabs
@@ -142,7 +146,13 @@ tabs.forEach((tab, index) => {
 var swiperDocentes = new Swiper(".swiperDocentes", {
 	slidesPerView: 3,
 	spaceBetween: 30,
-	centeredSlides: true,
+	// centeredSlides: true,
+	// loop: true,
+	fade: true,
+	grabCursor: true,
+	grid: {
+		rows: 1,
+	},
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -158,4 +168,16 @@ var swiperDocentes = new Swiper(".swiperDocentes", {
 			slidesPerView: 3,
 		},
 	},
+});
+
+// Color Border-bottom docentes cards
+docentesTitle.forEach((tit, index) => {
+	console.log(tit.style);
+	if (index % 3 === 0) {
+		tit.style.borderBottom = "2px solid rgb(var(--blue)";
+	} else if (index % 3 === 1) {
+		tit.style.borderBottom = "2px solid rgb(var(--red)";
+	} else {
+		tit.style.borderBottom = "2px solid rgb(var(--main-yellow)";
+	}
 });
