@@ -711,6 +711,9 @@
   overflow: hidden;
   z-index: 1;
   display: inline-block;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.6px;
 }
 
 .container-7-foot a::after {
