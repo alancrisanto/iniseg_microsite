@@ -27,7 +27,9 @@ const contentTab = document.querySelectorAll(".content-tab");
 
 // Color border bottom docentes cards
 const docentesTitle = document.querySelectorAll(".card-content-title");
-// console.log("docentes", docentesTitle);
+
+// Alternar colores en card cursos
+const bgSlides = document.querySelectorAll(".card-8-desc");
 
 // ------------------------------------- FUNCIONES -----------------------------------
 
@@ -142,17 +144,17 @@ tabs.forEach((tab, index) => {
 });
 
 // SWIPER
-// Docentes
-var swiperDocentes = new Swiper(".swiperDocentes", {
+// Docentes container 7
+const swiperDocentes = new Swiper(".swiperDocentes", {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	// centeredSlides: true,
 	// loop: true,
 	fade: true,
 	grabCursor: true,
-	grid: {
-		rows: 1,
-	},
+	// grid: {
+	// 	rows: 1,
+	// },
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -170,14 +172,63 @@ var swiperDocentes = new Swiper(".swiperDocentes", {
 	},
 });
 
+// Cards cursos container 8
+const swiper = new Swiper(".mySwiper", {
+	loop: true,
+	effect: "coverflow",
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 3,
+	coverflowEffect: {
+		rotate: 50,
+		stretch: 0,
+		depth: 100,
+		modifier: 1,
+		slideShadows: true,
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		520: {
+			slidesPerView: 2,
+		},
+		960: {
+			slidesPerView: 3,
+		},
+	},
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+
 // Color Border-bottom docentes cards
 docentesTitle.forEach((tit, index) => {
-	console.log(tit.style);
 	if (index % 3 === 0) {
 		tit.style.borderBottom = "2px solid rgb(var(--blue)";
 	} else if (index % 3 === 1) {
 		tit.style.borderBottom = "2px solid rgb(var(--red)";
 	} else {
 		tit.style.borderBottom = "2px solid rgb(var(--main-yellow)";
+	}
+});
+
+// Alternar colores en cards cursos
+bgSlides.forEach((blue, index) => {
+	if (index % 3 === 0) {
+		// blue.style.backgroundColor = "rgba(34,44,63,0.7)"; // Color blue
+		blue.style.setProperty("--pseudo-element-color-main", "var(--blue)"); // Asignar color a pseudo elemento before
+	} else if (index % 3 === 1) {
+		// blue.style.backgroundColor = "rgba(251,192,9,0.5)"; // Color Yellow
+		blue.style.setProperty("--pseudo-element-color-main", "var(--main-yellow)"); // Asignar color a pseudo elemento before
+	} else {
+		// blue.style.backgroundColor = "rgba(222,29,39,0.7)"; // Color Red
+		blue.style.setProperty("--pseudo-element-color-main", "var(--red)"); // Asignar color a pseudo elemento before
 	}
 });

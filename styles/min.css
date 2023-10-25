@@ -115,7 +115,8 @@
 .container-3,
 .container-5,
 .container-6,
-.container-7 {
+.container-7,
+.container-8 {
   padding: 2rem;
 }
 
@@ -568,6 +569,7 @@
 ### CONTAINER 7
 --------------------------------------------------------------------
 */
+
 .container-7-main {
   margin: 2rem 0;
 }
@@ -686,7 +688,6 @@
   position: absolute;
 }
 
-
 .card-content-btn a:hover::after {
   width: 200%;
 }
@@ -739,6 +740,103 @@
   transform: scale(1.035);
 }
 
+/* 
+--------------------------------------------------------------------
+### CONTAINER 8
+--------------------------------------------------------------------
+*/
+
+.container-8-head {
+  padding: 0 0 2rem 0;
+}
+
+.container-8-carrusel {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+/* Swiper */
+.mySwiper {
+  padding: 2rem !important;
+}
+
+.container-8-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container-8-slide figure {
+  /* display: block; */
+  width: 100%;
+  display: grid;
+  position: relative;
+}
+
+.swiper-8-btn {
+  display: none !important;
+}
+
+.swiper-8-btn-prev:after,
+.swiper-8-btn-next:after {
+  font-weight: bolder;
+  color: white;
+}
+
+.card-8-img>* {
+  grid-area: 1/1;
+}
+
+.container-8-slide figure img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+/* Figcaption */
+.card-8-desc {
+  position: relative;
+  align-self: end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+}
+
+.card-8-desc::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: rgb(var(--pseudo-element-color-main));
+  mix-blend-mode: multiply;
+  bottom: 0;
+}
+
+.card-8-desc p {
+  font-size: 0.85rem;
+  text-shadow: 2px 0px 2px black;
+  position: relative;
+}
+
+.card-8-desc p:first-child {
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 1rem;
+  border-bottom: 2px solid;
+  font-size: clamp(0.85rem, 3.5vw, 1.3rem);
+}
+
+.card-8-desc p:last-child {
+  padding-top: 0.5rem;
+  font-size: clamp(0.75rem, 3.5vw, 1.1rem);
+}
+
 /* .card-content-btn {
   align-self: end;
 } */
@@ -761,4 +859,15 @@
   }
 }
 
-@media screen and (min-width: 425px) {}
+@media screen and (min-width: 425px) {
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 8
+--------------------------------------------------------------------
+*/
+  .card-8-desc {
+    padding: 1rem;
+    height: 40%;
+  }
+}

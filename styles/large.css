@@ -41,14 +41,16 @@
 
   /* 
 --------------------------------------------------------------------
-### CONTAINER 6 - CONTAINER 7 HEAD
+### CONTAINER 6 - CONTAINER 7 HEAD - CONTAINER 8 HEAD
 --------------------------------------------------------------------
 */
 
   .container-6-head h3,
   .container-7-head h3,
   .container-6-head p,
-  .container-7-head p {
+  .container-7-head p,
+  .container-8-head h3,
+  .container-8-head p {
     text-align: center;
   }
 
