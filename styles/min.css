@@ -755,12 +755,17 @@
   max-width: 900px;
   position: relative;
   margin: 0 auto;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 /* Swiper */
 .mySwiper {
   padding: 2rem !important;
+}
+
+/* wrapper */
+.wrapper-container-8 {
+  padding: 0 0 2rem 0 !important;
 }
 
 .container-8-slide {
@@ -779,12 +784,6 @@
 
 .swiper-8-btn {
   display: none !important;
-}
-
-.swiper-8-btn-prev:after,
-.swiper-8-btn-next:after {
-  font-weight: bolder;
-  color: white;
 }
 
 .card-8-img>* {

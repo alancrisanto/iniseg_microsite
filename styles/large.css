@@ -54,6 +54,17 @@
     text-align: center;
   }
 
+
+  .swiper-8-btn {
+    display: block !important;
+  }
+
+  .swiper-8-btn:after {
+    font-weight: bolder;
+    color: rgb(var(--dark-blue));
+
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
