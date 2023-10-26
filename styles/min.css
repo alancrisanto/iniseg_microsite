@@ -116,7 +116,8 @@
 .container-5,
 .container-6,
 .container-7,
-.container-8 {
+.container-8,
+.container-9 {
   padding: 2rem;
 }
 
@@ -834,12 +835,132 @@
 
 .card-8-desc p:last-child {
   padding-top: 0.5rem;
-  font-size: clamp(0.70rem, 3vw, 1.5rem);
+  font-size: clamp(0.70em, 3vw, 1.5em);
 }
 
 /* .card-content-btn {
   align-self: end;
 } */
+
+/* 
+--------------------------------------------------------------------
+### CONTAINER 9
+--------------------------------------------------------------------
+*/
+
+.container-9-body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-9-head h3 {
+  padding: 0;
+}
+
+.container-9-head p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  text-transform: capitalize;
+}
+
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 1.5rem 0;
+}
+
+.date p {
+  color: rgb(var(--main-yellow));
+}
+
+.container-9-events {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.event-9-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  box-shadow: 0 5px 15px 0 #00000026;
+}
+
+.event-9-card img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.event-desc {
+  align-self: flex-start;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.event-desc p {
+  font-size: clamp(0.85rem, 1.2vw, 1.31rem);
+  font-weight: 700;
+}
+
+.event-desc p:last-child {
+  color: rgb(var(--main-yellow));
+}
+
+.container-9-footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+.container-9-footer a {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  color: rgb(var(--dark-blue));
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem 0.75rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.container-9-footer a::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  border-radius: 30em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(var(--main-yellow));
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.container-9-footer a:hover::before {
+  width: 100%;
+}
+
+.container-9-footer a:hover {
+  color: white;
+}
+
+.container-9-footer a:hover svg path {
+  fill: rgb(var(--dark-blue));
+}
+
 
 
 /* --************************************************************--- */
@@ -869,7 +990,7 @@
   }
 
   .card-8-desc p:last-child {
-    font-size: clamp(0.95rem, 4vw, 1.5rem);
+    font-size: clamp(0.70em, 4vw, 1em);
   }
 
 

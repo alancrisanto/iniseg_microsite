@@ -163,7 +163,17 @@
   }
 
   .card-8-desc p:last-child {
-    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-size: clamp(0.70em, 4vw, 1em);
+  }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 9
+--------------------------------------------------------------------
+*/
+
+  .container-9-events {
+    flex-direction: row;
   }
 
 }

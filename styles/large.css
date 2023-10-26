@@ -50,7 +50,9 @@
   .container-6-head p,
   .container-7-head p,
   .container-8-head h3,
-  .container-8-head p {
+  .container-8-head p,
+  .container-9-head h3,
+  .container-9-head p {
     text-align: center;
   }
 
