@@ -621,7 +621,7 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
-  max-width: 170px;
+  max-width: 150px;
   object-position: center;
 }
 
@@ -660,7 +660,7 @@
 }
 
 .card-content-btn {
-  margin: 1.5rem 0 1rem 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .card-content-btn a {
@@ -804,6 +804,7 @@
   width: 100%;
   padding: 0.5rem;
   color: white;
+  height: 45%;
 }
 
 .card-8-desc::before {
@@ -833,7 +834,7 @@
 
 .card-8-desc p:last-child {
   padding-top: 0.5rem;
-  font-size: clamp(0.75rem, 3.5vw, 1.1rem);
+  font-size: clamp(0.70rem, 3vw, 1.5rem);
 }
 
 /* .card-content-btn {
@@ -856,6 +857,22 @@
   .header-video-text h1 {
     font-size: clamp(1.95rem, 3.5vw, 3.25rem);
   }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 8
+--------------------------------------------------------------------
+*/
+
+  .card-8-desc p:first-child {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+
+  .card-8-desc p:last-child {
+    font-size: clamp(0.95rem, 4vw, 1.5rem);
+  }
+
+
 }
 
 @media screen and (min-width: 425px) {
@@ -867,6 +884,6 @@
 */
   .card-8-desc {
     padding: 1rem;
-    height: 40%;
+    /* height: 45%; */
   }
 }

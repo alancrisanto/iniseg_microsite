@@ -1,4 +1,4 @@
-@media only screen and (min-width: 544px) {
+@media only screen and (min-width: 520px) {
 
   /* 
 --------------------------------------------------------------------
@@ -7,6 +7,20 @@
 */
   .body-1-btns {
     flex-direction: row;
+  }
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 8
+--------------------------------------------------------------------
+*/
+
+  .card-8-desc p:first-child {
+    font-size: clamp(0.7rem, 1vw, 1.5rem);
+  }
+
+  .card-8-desc p:last-child {
+    font-size: clamp(0.7rem, 1vw, 1.5rem);
   }
 }
 
@@ -143,6 +157,14 @@
     padding: 1rem 1rem 1rem 2rem;
   }
 
+
+  .card-8-desc p:first-child {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+
+  .card-8-desc p:last-child {
+    font-size: clamp(0.7rem, 2vw, 1rem);
+  }
 
 }
 

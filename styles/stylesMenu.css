@@ -695,6 +695,12 @@ header .sticky .nav-menu>li>a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    min-width: 1024px;
+  }
+}
+
 /* fin estilos menu tablet */
 
 @media screen and (max-width: 1023px) {
