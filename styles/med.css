@@ -176,6 +176,23 @@
     flex-direction: row;
   }
 
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 10
+--------------------------------------------------------------------
+*/
+
+  .card-10-main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-10-content {
+    text-align: left;
+    max-width: 72%;
+
+  }
+
 }
 
 @media only screen and (min-width: 820px) {}
