@@ -31,6 +31,9 @@ const docentesTitle = document.querySelectorAll(".card-content-title");
 // Alternar colores en card cursos
 const bgSlides = document.querySelectorAll(".card-8-desc");
 
+// Efector fade
+const sections = document.querySelectorAll(".fade-effect");
+
 // ------------------------------------- FUNCIONES -----------------------------------
 
 // LAZY LOADING
@@ -56,6 +59,19 @@ let observer = new IntersectionObserver((entries, observer) => {
 images.forEach((image) => {
 	observer.observe(image);
 });
+
+// ANIMATION OBSERVER
+let animationObserver = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("fade-show");
+		} else {
+			entry.target.classList.remove("fade-show");
+		}
+	});
+});
+
+sections.forEach((el) => animationObserver.observe(el));
 
 // ALTERNAR COLORES EN CARDS
 function coloresCards() {

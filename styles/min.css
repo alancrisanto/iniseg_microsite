@@ -18,6 +18,20 @@
   }
 }
 
+/* section animations */
+.fade-effect {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+
+.fade-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 /* 
 --------------------------------------------------------------------
 ### HEADER VIDEO 
@@ -365,6 +379,19 @@
 /* head */
 .content-tab {
   display: none;
+  animation: moving 0.5s ease;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .content-tab.active {
@@ -389,6 +416,9 @@
 .container-3-main img {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  aspect-ratio: 4/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 
