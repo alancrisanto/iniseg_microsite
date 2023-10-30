@@ -1134,3 +1134,10 @@
     /* height: 45%; */
   }
 }
+
+/* Habilitar opcion de quitar animation de fade */
+@media (prefers-reduced-motion) {
+  .fade-effect {
+    transition: none;
+  }
+}
