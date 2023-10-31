@@ -150,7 +150,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-6-main {
+  .main-6-card {
     grid-template-columns: 1fr 2fr;
     place-items: center;
     gap: 1rem;

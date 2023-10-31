@@ -402,7 +402,6 @@
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.64px;
-  text-transform: capitalize;
   padding: 1rem 0 1rem 0;
 }
 
@@ -603,8 +602,18 @@
 }
 
 .container-6-main {
+  padding: 1.5rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-6-card {
   display: grid;
-  padding: 2rem 0 0 0;
+  padding: 0 0 1.5rem 0;
+}
+
+.main-6-card img {
+  max-height: 135px;
 }
 
 /* 
@@ -916,7 +925,8 @@
 }
 
 .date p {
-  color: rgb(var(--main-yellow));
+  color: rgb(var(--dark-blue));
+  font-weight: 700;
 }
 
 .container-9-events {
