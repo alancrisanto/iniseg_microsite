@@ -34,6 +34,11 @@ const bgSlides = document.querySelectorAll(".card-8-desc");
 // Efector fade
 const sections = document.querySelectorAll(".fade-effect");
 
+// Year Copyright
+const copyYear = document.querySelector(".copy-year");
+
+const Year = new Date().getFullYear();
+
 // ------------------------------------- FUNCIONES -----------------------------------
 
 // LAZY LOADING
@@ -248,3 +253,6 @@ bgSlides.forEach((blue, index) => {
 		blue.style.setProperty("--pseudo-element-color-main", "var(--red)"); // Asignar color a pseudo elemento before
 	}
 });
+
+// Copyright Year
+copyYear.innerHTML = Year;
