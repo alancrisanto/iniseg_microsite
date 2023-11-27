@@ -535,6 +535,10 @@ header .sticky .nav-menu>li>a {
     gap: 2rem;
   }
 
+  .container {
+    min-width: 1024px;
+  }
+
   /* HEADER MENU */
 
   .header-img-container {
@@ -692,12 +696,6 @@ header .sticky .nav-menu>li>a {
 @media screen and (min-width: 760px) and (max-width: 1020px) {
   nav .nav-menu {
     width: 45%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    min-width: 1024px;
   }
 }
 
