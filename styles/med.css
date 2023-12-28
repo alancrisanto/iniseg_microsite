@@ -40,18 +40,16 @@
     padding-left: 4rem;
   }
 
-  /* 
---------------------------------------------------------------------
-### COMMON 
---------------------------------------------------------------------
-*/
-
-  .container-2-body,
-  .container-3,
-  .container-4,
-  .container-5 {
-    margin: 3.5rem 0 0 0;
+  /* cinta curso */
+  .header-curso-cinta {
+    padding: 1rem;
   }
+
+  .curso-cinta-box {
+    display: flex;
+    gap: 2rem;
+  }
+
 
   /* 
 --------------------------------------------------------------------
@@ -59,14 +57,7 @@
 --------------------------------------------------------------------
 */
 
-  .cotainer-1-head {
-    padding: 1rem;
-  }
 
-  .head-1-box {
-    display: flex;
-    gap: 2rem;
-  }
 
   .container-1-body-form {
     display: flex;
@@ -79,20 +70,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-2-body {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    gap: 2rem;
-  }
 
-
-
-  .tabs-list {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -113,19 +91,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-4-head {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
 
-  .container-4-head p:not(:last-child) {
-    border-right: 1px solid white;
-  }
-
-  .container-4-main h3 {
-    padding: 4rem 0;
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -133,9 +99,6 @@
 --------------------------------------------------------------------
 */
 
-  .container-5-main {
-    grid-template-columns: 1fr 1fr;
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -143,11 +106,7 @@
 --------------------------------------------------------------------
 */
 
-  .main-6-card {
-    grid-template-columns: 1fr 2fr;
-    place-items: center;
-    gap: 1rem;
-  }
+
 
   /* 
 --------------------------------------------------------------------
@@ -155,23 +114,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-8-slide {
-    max-width: 280px !important;
-  }
 
-  /* Figcaption */
-  .card-8-desc {
-    padding: 1rem 1rem 1rem 2rem;
-  }
-
-
-  .card-8-desc p:first-child {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
-  }
-
-  .card-8-desc p:last-child {
-    font-size: clamp(0.70em, 4vw, 1em);
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -179,9 +122,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-9-events {
-    flex-direction: row;
-  }
+
 
   /* 
 --------------------------------------------------------------------
@@ -189,16 +130,7 @@
 --------------------------------------------------------------------
 */
 
-  .card-10-main {
-    flex-direction: row;
-    align-items: center;
-  }
 
-  .card-10-content {
-    text-align: left;
-    max-width: 72%;
-
-  }
 
 }
 

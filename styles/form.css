@@ -3,7 +3,7 @@
   margin-top: 2rem;
   background-color: white;
   padding: 1rem;
-  box-shadow: 0 5px 15px 0 #00000026;
+  /* box-shadow: 0 5px 15px 0 #00000026; */
 }
 
 .body-1-form h3,
@@ -277,6 +277,10 @@ input.search-box {
 
   #cursoInteres {
     max-width: 100%;
+  }
+
+  .form-group {
+    display: block;
   }
 
   .form-group-container {
