@@ -26,9 +26,9 @@
 	font-family: var(--open-sans);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 body {
 	color: rgba(var(--dark-blue), 1) !important;

@@ -3,10 +3,6 @@
   /*--------------------------------------------------------------------
 #### HEADER IMG VIDEO
 ---------------------------------------------------------------------*/
-  .header-video-text {
-    top: 60%;
-  }
-
   .header-video:hover .swiper-button-prev-header,
   .header-video:hover .swiper-button-next-header {
     padding: 1.8rem;

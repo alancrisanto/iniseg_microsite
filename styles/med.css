@@ -35,9 +35,19 @@
     max-height: 500px;
   }
 
-  .header-video-text h1 {
-    width: min(73%, 1300px);
-    padding-left: 4rem;
+  .header-video-text {
+    display: initial;
+    width: min(50%, 1000px);
+    /* padding-left: 4rem; */
+  }
+
+  .header-video-text p {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 0 1rem 1rem 0;
+  }
+
+  .video-text-movil {
+    display: none;
   }
 
   /* cinta curso */

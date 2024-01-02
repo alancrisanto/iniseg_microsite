@@ -50,7 +50,7 @@
 
 .swiper-slide-header img {
   width: 100%;
-  max-height: 370px;
+  max-height: 250px;
   aspect-ratio: 1/1;
   object-fit: fill;
   object-position: center;
@@ -112,14 +112,14 @@
   position: absolute;
   inset: 50% auto auto 0;
   transform: translate(0, -50%);
-  color: white;
   text-align: left;
+  display: none;
 }
 
-.header-video-text h1 {
-  font-size: clamp(1.65rem, 3.5vw, 3.25rem);
+.header-video-text h1,
+.video-text-movil h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
-  padding: 2rem;
 }
 
 /* cinta curso */
@@ -167,7 +167,19 @@
 ---------------------------------------------------------------------*/
 
 aside {
+  max-width: 330px;
   background-color: rgb(var(--grey));
+}
+
+aside .form-body-title {
+  color: white;
+  background-color: rgb(var(--blue));
+}
+
+aside .form-container-body {
+  position: sticky;
+  top: 100px;
+  z-index: 1;
 }
 
 /* 
@@ -435,25 +447,7 @@ aside {
 
 @media screen and (min-width: 360px) {}
 
-@media screen and (min-width: 375px) {
-
-  /*------------------------------------------------------------------------
-### HEADER VIDEO 
--------------------------------------------------------------------------*/
-  .header-video-text h1 {
-    font-size: clamp(1.95rem, 3.5vw, 3.25rem);
-  }
-
-  /* 
---------------------------------------------------------------------
-### CONTAINER --
---------------------------------------------------------------------
-*/
-
-
-
-
-}
+@media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 425px) {}
 
