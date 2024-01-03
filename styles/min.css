@@ -274,42 +274,43 @@ aside .form-container-body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 0.5rem;
-  margin: 0 0 2rem 0;
+  justify-content: space-between;
 }
 
 /* li */
 .tab-btn {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.85rem;
   letter-spacing: 0.64px;
   border-bottom: 3px solid rgb(var(--dark-grey));
   transition: border-bottom 600ms;
   position: relative;
   cursor: pointer;
+  padding: 0.5rem;
+  flex: 1;
 }
 
-.tab-btn::after {
+.tab-btn::before {
   position: absolute;
   content: "";
   width: 0;
   background-color: rgb(var(--dark-blue));
-  z-index: -1;
+  z-index: 1;
   height: 3px;
-  bottom: -4px;
+  top: -4px;
   left: 0;
   transition: width 600ms;
 }
 
-.tab-btn.active::after {
+.tab-btn.active::before {
   width: 100%;
   transition: width 800ms;
 }
 
 .tab-btn.active {
-  border-bottom: transparent;
+  /* border-bottom: transparent; */
   font-weight: 700;
+  background-color: rgb(var(--grey));
 }
 
 /* head */
@@ -348,25 +349,11 @@ aside .form-container-body {
   flex-direction: column;
 }
 
-.container-3-main img {
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  aspect-ratio: 4/1;
-  object-fit: cover;
-  object-position: center;
-}
-
-
 /* content box */
 .content-tab-box {
   background-color: rgb(var(--grey));
   padding: 1rem;
 }
-
-/* .alumno-desc p strong,
-.alumno-desc-info p strong {
-  font-weight: 500;
-} */
 
 .alumno-desc,
 .titulo-content p {
