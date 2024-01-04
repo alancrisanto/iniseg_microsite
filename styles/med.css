@@ -35,25 +35,37 @@
     max-height: 500px;
   }
 
-  .header-video-text h1 {
-    width: min(73%, 1300px);
-    padding-left: 4rem;
+  .header-video-text {
+    display: initial;
+    width: min(50%, 1000px);
+    /* padding-left: 4rem; */
   }
+
+  .header-video-text p {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    padding: 0 1rem 1rem 0;
+  }
+
+  .video-text-movil {
+    display: none;
+  }
+
+  /* cinta curso */
+  .header-curso-cinta {
+    padding: 1rem;
+  }
+
+  .curso-cinta-box {
+    display: flex;
+    gap: 2rem;
+  }
+
 
   /* 
 --------------------------------------------------------------------
 ### CONTAINER 1 
 --------------------------------------------------------------------
 */
-
-  .cotainer-1-head {
-    padding: 1rem;
-  }
-
-  .head-1-box {
-    display: flex;
-    gap: 2rem;
-  }
 
   .container-1-body-form {
     display: flex;
@@ -66,26 +78,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-2-body {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    gap: 2rem;
-  }
 
-  .container-2-body img {
-    aspect-ratio: 1/1;
-    object-fit: fill;
-    object-position: center;
-    width: 100%;
-    max-height: 360px;
-  }
-
-  .tabs-list {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -93,11 +86,17 @@
 --------------------------------------------------------------------
 */
 
+  .tabs-list {
+    flex-direction: row;
+  }
+
+  .tab-btn {
+    border-bottom: transparent;
+  }
+
   .content-tab-box {
     padding: 2rem;
-    margin: -1rem 0 0 0;
     z-index: 1;
-    border-radius: 1rem;
   }
 
   /* 
@@ -106,18 +105,8 @@
 --------------------------------------------------------------------
 */
 
-  .container-4-head {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .container-4-head p:not(:last-child) {
-    border-right: 1px solid white;
-  }
-
-  .container-4-main h3 {
-    padding: 4rem 0;
+  .docente-card img {
+    align-self: self-start;
   }
 
   /* 
@@ -126,8 +115,20 @@
 --------------------------------------------------------------------
 */
 
-  .container-5-main {
-    grid-template-columns: 1fr 1fr;
+  .container-5-body {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .container-5-body::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 100%;
+    width: 5.5rem;
+    z-index: -1;
   }
 
   /* 
@@ -136,11 +137,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-6-main {
-    grid-template-columns: 1fr 2fr;
-    place-items: center;
-    gap: 1rem;
-  }
+
 
   /* 
 --------------------------------------------------------------------
@@ -148,23 +145,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-8-slide {
-    max-width: 280px !important;
-  }
 
-  /* Figcaption */
-  .card-8-desc {
-    padding: 1rem 1rem 1rem 2rem;
-  }
-
-
-  .card-8-desc p:first-child {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
-  }
-
-  .card-8-desc p:last-child {
-    font-size: clamp(0.70em, 4vw, 1em);
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -172,9 +153,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-9-events {
-    flex-direction: row;
-  }
+
 
   /* 
 --------------------------------------------------------------------
@@ -182,16 +161,7 @@
 --------------------------------------------------------------------
 */
 
-  .card-10-main {
-    flex-direction: row;
-    align-items: center;
-  }
 
-  .card-10-content {
-    text-align: left;
-    max-width: 72%;
-
-  }
 
 }
 

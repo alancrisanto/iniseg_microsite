@@ -3,10 +3,6 @@
   /*--------------------------------------------------------------------
 #### HEADER IMG VIDEO
 ---------------------------------------------------------------------*/
-  .header-video-text {
-    top: 60%;
-  }
-
   .header-video:hover .swiper-button-prev-header,
   .header-video:hover .swiper-button-next-header {
     padding: 1.8rem;
@@ -19,15 +15,15 @@
 
   /* 
 --------------------------------------------------------------------
-### CONTAINER 1 
+### CONTAINER 4
 --------------------------------------------------------------------
 */
 
-  .cotainer-1-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  .docente-card img {
+    align-self: auto;
   }
+
+
 
   /* 
 --------------------------------------------------------------------
@@ -35,36 +31,17 @@
 --------------------------------------------------------------------
 */
 
-  .container-5-head h3 {
-    text-align: center;
-  }
+
+
+
 
   /* 
 --------------------------------------------------------------------
-### CONTAINER 6 - CONTAINER 7 HEAD - CONTAINER 8 HEAD
+### CONTAINER 8
 --------------------------------------------------------------------
 */
 
-  .container-6-head h3,
-  .container-7-head h3,
-  .container-6-head p,
-  .container-7-head p,
-  .container-8-head h3,
-  .container-8-head p,
-  .container-9-head h3,
-  .container-9-head p {
-    text-align: center;
-  }
 
-
-  .swiper-8-btn {
-    display: block !important;
-  }
-
-  .swiper-8-btn:after {
-    font-weight: bolder;
-    color: rgb(var(--dark-blue));
-  }
 
   /* 
 --------------------------------------------------------------------
@@ -72,19 +49,7 @@
 --------------------------------------------------------------------
 */
 
-  .container-10-body {
-    margin: 0 0 4rem 4rem;
-  }
 
-  .container-10-card img {
-    top: 50%;
-    left: 1rem;
-  }
-
-
-  .card-10-main {
-    padding: 1rem 1rem 1rem 7rem;
-  }
 }
 
 @media screen and (min-width: 1280px) {

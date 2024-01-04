@@ -32,7 +32,7 @@ const navMenu = document.querySelector(".nav-menu");
 
 dropdownMenus.forEach(function (dropdownMenu) {
 	dropdownMenu.previousElementSibling.addEventListener("click", function () {
-		if (window.innerWidth < 994) {
+		if (window.innerWidth < 1200) {
 			dropdownMenu.classList.add("show");
 			toggleNavbar.classList.add("hide");
 		}
@@ -40,7 +40,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
 
 	const dropdownClose = dropdownMenu.querySelector(".dropdown-close");
 	dropdownClose.addEventListener("click", function () {
-		if (window.innerWidth < 994) {
+		if (window.innerWidth < 1200) {
 			dropdownMenu.classList.remove("show");
 			toggleNavbar.classList.remove("hide");
 		}
@@ -49,7 +49,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
 
 // FUNCIÓN BOTÓN HAMBURGUESA / CLOSE  --MENÚ
 toggleNavbar.addEventListener("click", function () {
-	if (window.innerWidth < 994) {
+	if (window.innerWidth < 1200) {
 		navMenu.classList.toggle("show");
 
 		if (navMenu.classList.contains("show")) {
