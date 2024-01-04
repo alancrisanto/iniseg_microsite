@@ -378,7 +378,87 @@ aside .form-container-body {
 ### CONTAINER 4
 --------------------------------------------------------------------
 */
+.container-4-body {
+  background-color: rgb(var(--grey));
+  margin: 0 -2rem;
+  padding: 2rem;
+}
 
+/* cards programa */
+.program-4-card {
+  background-color: white;
+  border-bottom: 3px solid rgb(var(--blue));
+}
+
+/* cards docentes */
+.docente-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.docente-card img {
+  max-width: 115px;
+  /* max-height: 115px; */
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-self: center;
+}
+
+.docente-info-desc p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.docente-card-info p,
+.docente-card-info a {
+  font-size: 0.75rem;
+}
+
+.docente-info-name {
+  border-bottom: 1px solid rgb(var(--dark-yellow));
+}
+
+/* button */
+.docente-info-desc a {
+  background-color: rgba(var(--middle-grey));
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: rgb(var(--dark-blue));
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.docente-info-desc a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2rem;
+  width: 0;
+  transition: width 600ms;
+  height: 100%;
+  background-color: rgb(var(--footer-blue));
+  transform: skew(45deg);
+  z-index: -1;
+}
+
+.docente-info-desc a:hover::after {
+  width: 150%;
+}
+
+.docente-info-desc a:hover {
+  color: white;
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+}
 
 /* 
 --------------------------------------------------------------------
@@ -434,7 +514,22 @@ aside .form-container-body {
 
 @media screen and (min-width: 360px) {}
 
-@media screen and (min-width: 375px) {}
+@media screen and (min-width: 375px) {
+
+  /* 
+--------------------------------------------------------------------
+### CONTAINER 4
+--------------------------------------------------------------------
+*/
+  /* cards docentes */
+  .docente-card {
+    flex-direction: row;
+  }
+
+  .docente-card img {
+    align-self: auto;
+  }
+}
 
 @media screen and (min-width: 425px) {}
 
