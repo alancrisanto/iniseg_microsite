@@ -115,6 +115,21 @@
 --------------------------------------------------------------------
 */
 
+  .container-5-body {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .container-5-body::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 100%;
+    width: 5.5rem;
+    z-index: -1;
+  }
 
   /* 
 --------------------------------------------------------------------

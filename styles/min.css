@@ -426,7 +426,7 @@ aside .form-container-body {
 }
 
 /* button */
-.docente-info-desc a {
+.docente-card-info a {
   background-color: rgba(var(--middle-grey));
   padding: 0.5rem 1rem;
   text-align: center;
@@ -437,7 +437,7 @@ aside .form-container-body {
   isolation: isolate;
 }
 
-.docente-info-desc a::after {
+.docente-card-info a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -450,11 +450,11 @@ aside .form-container-body {
   z-index: -1;
 }
 
-.docente-info-desc a:hover::after {
+.docente-card-info a:hover::after {
   width: 150%;
 }
 
-.docente-info-desc a:hover {
+.docente-card-info a:hover {
   color: white;
   outline: 2px solid #ffffff;
   box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
@@ -466,7 +466,55 @@ aside .form-container-body {
 --------------------------------------------------------------------
 */
 
+.container-5-body {
+  background-color: rgb(var(--grey));
+  margin: 0 -2rem !important;
+  padding: 2rem;
+}
 
+.body-5-desc p {
+  font-size: clamp(0.85rem, 1vw, 1rem);
+}
+
+.body-5-desc a {
+  color: rgb(var(--dark-blue));
+  font-size: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  align-self: self-start;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid grey;
+}
+
+.body-5-desc a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2rem;
+  width: 0;
+  transition: width 600ms;
+  height: 100%;
+  background-color: rgb(var(--footer-blue));
+  z-index: -1;
+}
+
+.body-5-desc a:hover::after {
+  width: 150%;
+}
+
+.body-5-desc a:hover {
+  color: white;
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+}
+
+.container-5-body img {
+  aspect-ratio: 4/2;
+  object-fit: cover;
+}
 
 /* 
 --------------------------------------------------------------------
