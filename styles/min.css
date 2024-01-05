@@ -629,7 +629,45 @@ aside .form-container-body {
 --------------------------------------------------------------------
 */
 
+.container-8-body {
+  background-color: rgb(var(--middle-grey));
+  background-image: url("../assets/images/cards/background-ecommerce.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem;
+}
 
+.container-8-body a {
+  background-color: rgb(var(--footer-blue));
+  color: white;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.container-8-body a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition: width 600ms;
+  z-index: -1;
+  transform: skew(45deg);
+  left: -2rem;
+  bottom: 0;
+  background-color: rgb(var(--red));
+}
+
+.container-8-body a:hover::after {
+  width: 150%;
+}
+
+.container-8-body a:hover {
+  outline: 1px solid white;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+}
 
 /* 
 --------------------------------------------------------------------
@@ -637,13 +675,6 @@ aside .form-container-body {
 --------------------------------------------------------------------
 */
 
-
-
-/* 
---------------------------------------------------------------------
-### CONTAINER 10
---------------------------------------------------------------------
-*/
 
 
 
