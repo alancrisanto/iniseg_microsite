@@ -522,6 +522,33 @@ aside .form-container-body {
 --------------------------------------------------------------------
 */
 
+.container-6-title p {
+  font-size: 0.85rem;
+}
+
+
+.container-6-card {
+  max-width: 210px;
+  background-color: rgb(var(--grey));
+}
+
+.container-6-card img {
+  max-width: 175px;
+  padding: 0.5rem;
+  background-color: white;
+  aspect-ratio: 3/2;
+  object-position: center;
+  object-fit: contain;
+}
+
+.container-6-card a:hover svg {
+  transform: scale(1.2);
+}
+
+.container-6-card a:hover svg path:first-child {
+  fill: rgb(var(--blue));
+  fill-opacity: 1;
+}
 
 /* 
 --------------------------------------------------------------------
