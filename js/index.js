@@ -10,7 +10,7 @@ const isIndexPage = currentPagePath === "/index.html" || currentPagePath === "/"
 const images = document.querySelectorAll(".img-lazy");
 
 // variables para generar lista de paises en select
-const select = document.querySelector(".section-select");
+const selectForm = document.querySelector(".section-select");
 
 // variables para aplicar funcion focus input section-6
 const input6 = document.querySelectorAll(".input-form");
@@ -22,6 +22,9 @@ const contentTab = document.querySelectorAll(".content-tab");
 
 // Efector fade
 const sections = document.querySelectorAll(".fade-effect");
+
+// Formulario Te llamamos teléfono
+const callFormSelect = document.querySelector(".callFormSelect");
 
 // Year Copyright
 const copyYear = document.querySelector(".copy-year");
@@ -94,7 +97,7 @@ function focusInput(inputElement, div) {
 }
 
 // GENERAR LISTA DE PAÍSES EN SELECT OPTION
-const getPaises = async () => {
+const getPaises = async (select) => {
 	const countries = services.countries;
 	countries.forEach((country) => {
 		const option = document.createElement("option");
@@ -105,7 +108,8 @@ const getPaises = async () => {
 	});
 };
 
-getPaises();
+getPaises(selectForm);
+getPaises(callFormSelect);
 
 // APLICAR FUNCION FOCUSINPUT A INPUTS DE SECTION 6
 for (let i = 0; i < input6.length; i++) {
@@ -130,3 +134,27 @@ tabs.forEach((tab, index) => {
 
 // Copyright Year
 copyYear.innerHTML = Year;
+
+// Validación formulario te llamamos
+(() => {
+	"use strict";
+
+	const forms = document.querySelectorAll(".needs-validation");
+	console.log(forms);
+
+	// Loop over them and prevent submission
+	Array.from(forms).forEach((form) => {
+		form.addEventListener(
+			"submit",
+			(event) => {
+				if (!form.checkValidity()) {
+					event.preventDefault();
+					event.stopPropagation();
+				}
+
+				form.classList.add("was-validated");
+			},
+			false,
+		);
+	});
+})();

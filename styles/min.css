@@ -675,8 +675,129 @@ aside .form-container-body {
 --------------------------------------------------------------------
 */
 
+/* cards */
+.card-9 {
+  max-width: 480px;
+  flex: 0 1 auto !important;
+}
 
+.card-9-image {
+  width: 100%;
+  display: grid;
+  position: relative;
+}
 
+.card-9-image>* {
+  grid-area: 1/1;
+}
+
+.card-9 figure img {
+  width: 100%;
+  aspect-ratio: 3.5/2;
+  object-fit: fill;
+  object-position: center;
+  /* max-height: 230px; */
+}
+
+/* Figcaption */
+.card-9-desc {
+  align-self: end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.card-9-desc::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: rgb(0, 0, 0, 0.5);
+  bottom: 0;
+}
+
+.card-9-desc h4 {
+  text-align: left;
+  text-shadow: 2px 0px 2px black;
+  position: relative;
+  padding-top: 0.5rem;
+  /* font size generado por js */
+  /* font-size: clamp(0.8rem, 4vw, 1.30rem); */
+}
+
+.card-9-detail p {
+  font-size: 0.85rem;
+}
+
+.card-9-detail img {
+  max-width: 20px;
+  height: 20px;
+}
+
+.card-9-body {
+  padding: 0 0.5rem;
+}
+
+.card-9-btn a {
+  display: block;
+  font-weight: 600;
+  padding: 0.85rem 1rem;
+  background-color: rgb(var(--middle-grey));
+  color: rgb(var(--dark-blue));
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 600ms;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.card-9-btn a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  transition: width 600ms;
+  left: -2rem;
+  transform: skew(45deg);
+  height: 100%;
+  z-index: -1;
+  background-color: rgb(var(--red));
+}
+
+.card-9-btn a:hover::after {
+  width: 200%;
+}
+
+.card-9-btn a:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
+  color: white;
+}
+
+/*--------------------------------------------------------------------
+### CINTA CONTACTO 
+---------------------------------------------------------------------*/
+.cinta-contacto-desc a {
+  cursor: pointer;
+}
+
+.cinta-contacto-desc a:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.cinta-contacto-desc a p {
+  color: rgb(var(--dark-blue));
+}
+
+/* Modal Formulario */
+.callForm-conditions {
+  border: 1px solid rgb(var(--middle-grey));
+}
 
 /* --************************************************************--- */
 /*--------------------------------------------------------------------
@@ -699,6 +820,28 @@ aside .form-container-body {
 
   .docente-card img {
     align-self: auto;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  /*---------------------------------------
+CONTAINER SECTION-9
+----------------------------------------- */
+  .card-9-box-esp {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr !important;
+  }
+}
+
+@media screen and (min-width:370px) and (max-width: 420px) {
+
+  /*---------------------------------------
+CONTAINER SECTION-9
+----------------------------------------- */
+  .card-9-box-esp {
+    display: grid !important;
+    grid-template-columns: 1.8fr 2fr !important;
   }
 }
 
