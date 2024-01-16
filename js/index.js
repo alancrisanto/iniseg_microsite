@@ -140,7 +140,6 @@ copyYear.innerHTML = Year;
 	"use strict";
 
 	const forms = document.querySelectorAll(".needs-validation");
-	console.log(forms);
 
 	// Loop over them and prevent submission
 	Array.from(forms).forEach((form) => {

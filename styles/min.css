@@ -182,6 +182,15 @@ aside .form-container-body {
   z-index: 1;
 }
 
+aside .form-container-body .form-icons-list a img {
+  max-width: 25px;
+}
+
+aside .form-container-body .form-icons-list a:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /* 
 --------------------------------------------------------------------
 ### CONTAINER 1 
