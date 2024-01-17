@@ -175,14 +175,23 @@ aside .form-body-title {
   background-color: rgb(var(--blue));
 }
 
-aside .form-container-body .form-icons-list a img {
-  max-width: 25px;
+aside .form-container-body .form-icons-list a i {
+  font-size: 1.5rem;
+  color: rgb(var(--dark-grey))
 }
 
-aside .form-container-body .form-icons-list a:hover img {
+aside .form-container-body .form-icons-list a i:hover {
+  color: rgb(var(--blue))
+}
+
+/* aside .form-container-body .form-icons-list a img {
+  max-width: 25px;
+} */
+
+/* aside .form-container-body .form-icons-list a:hover img {
   transform: scale(1.1);
   cursor: pointer;
-}
+} */
 
 /* 
 --------------------------------------------------------------------
@@ -491,7 +500,7 @@ aside .form-container-body .form-icons-list a:hover img {
   border: 1px solid grey;
 }
 
-.body-5-desc a::after {
+/* .body-5-desc a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -511,7 +520,7 @@ aside .form-container-body .form-icons-list a:hover img {
   color: white;
   outline: 2px solid #ffffff;
   box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
-}
+} */
 
 .container-5-body img {
   aspect-ratio: 4/2;
