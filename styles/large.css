@@ -55,5 +55,17 @@
     position: sticky;
     top: 100px;
     z-index: 1;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
   }
+
+  aside .form-container-body::-webkit-scrollbar {
+    display: none;
+  }
+
+  aside .form-container-body {
+    scrollbar-width: none;
+    /* For Firefox */
+  }
+
 }
