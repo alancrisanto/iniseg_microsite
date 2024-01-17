@@ -261,7 +261,7 @@ input.search-box {
 
 @media only screen and (min-width: 768px) {
   .body-1-form {
-    margin-top: 0;
+    margin: 0 auto;
     max-width: 550px;
   }
 

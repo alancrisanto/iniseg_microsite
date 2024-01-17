@@ -40,4 +40,20 @@
   .header-video-text {
     gap: 2rem;
   }
+
+  /* 
+--------------------------------------------------------------------
+### Aside Form
+--------------------------------------------------------------------
+*/
+
+  aside {
+    max-width: 330px;
+  }
+
+  aside .form-container-body {
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+  }
 }

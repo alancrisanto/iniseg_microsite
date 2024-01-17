@@ -163,23 +163,16 @@
 }
 
 /*--------------------------------------------------------------------
-#### Aside
+#### Aside form
 ---------------------------------------------------------------------*/
 
 aside {
-  max-width: 330px;
   background-color: rgb(var(--grey));
 }
 
 aside .form-body-title {
   color: white;
   background-color: rgb(var(--blue));
-}
-
-aside .form-container-body {
-  position: sticky;
-  top: 100px;
-  z-index: 1;
 }
 
 aside .form-container-body .form-icons-list a img {
@@ -606,19 +599,7 @@ aside .form-container-body .form-icons-list a:hover img {
   font-size: clamp(0.85rem, 1.25vw, 1.25rem);
 }
 
-.event-7-date-desc p:last-child {
-  color: rgb(var(--dark-yellow));
-  font-weight: 700;
-  /* text-shadow: 2px 1px 3px #000000; */
-}
-
-.event-7-desc p:first-child {
-  font-size: 0.75rem;
-  text-align: right;
-  color: rgb(var(--dark-grey))
-}
-
-.event-7-desc p:last-child {
+.event-7-desc p {
   font-size: 0.85rem;
   display: -webkit-box;
   -webkit-line-clamp: 4;
