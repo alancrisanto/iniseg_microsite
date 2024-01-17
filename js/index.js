@@ -26,6 +26,10 @@ const sections = document.querySelectorAll(".fade-effect");
 // Formulario Te llamamos teléfono
 const callFormSelect = document.querySelector(".callFormSelect");
 
+// bton solicitar información
+const btnInfo = document.querySelector(".static-btn");
+const form = document.querySelector(".form-container-body");
+
 // Year Copyright
 const copyYear = document.querySelector(".copy-year");
 
@@ -157,3 +161,18 @@ copyYear.innerHTML = Year;
 		);
 	});
 })();
+
+// InterserctionObserver para ocultar div de solicitar información al mostrarse el formulario en vista movil
+
+let formObserver = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			console.log("observing");
+			btnInfo.classList.add("d-none");
+		} else {
+			btnInfo.classList.remove("d-none");
+		}
+	});
+});
+
+formObserver.observe(form);
