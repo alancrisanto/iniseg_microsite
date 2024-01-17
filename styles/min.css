@@ -792,8 +792,53 @@ aside .form-container-body .form-icons-list a:hover img {
 /*--------------------------------------------------------------------
 ### BOTÓN SOLICITAR INFORMACIÓN
 ---------------------------------------------------------------------*/
-.btn-sol-info {
+.static-btn a {
   background-color: rgb(var(--blue));
+}
+
+.static-btn a:hover {
+  background-color: rgb(var(--dark-blue));
+  transition: background-color 600ms;
+}
+
+/* Arrows */
+.arrow-icons i:not(:first-child) {
+  margin-left: -10px;
+}
+
+.arrow-icons i {
+  font-size: 1.5rem;
+}
+
+.arrow-icons i::before {
+  font-weight: 700 !important;
+}
+
+.arrow-icons i:nth-child(1) {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.arrow-icons i:nth-child(2) {
+  animation: color_anim 1s infinite 0.4s;
+}
+
+.arrow-icons i:nth-child(3) {
+  animation: color_anim 1s infinite 0.6s;
+}
+
+/* Animation */
+@keyframes color_anim {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: rgb(var(--main-yellow));
+  }
+
+  100% {
+    color: white;
+  }
 }
 
 
