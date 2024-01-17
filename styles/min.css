@@ -789,6 +789,14 @@ aside .form-container-body .form-icons-list a i:hover {
   transition: transform 0.5s;
 }
 
+.cinta-contacto-desc a:hover svg path,
+.cinta-contacto-desc a:hover p {
+  fill: rgb(var(--blue));
+  color: rgb(var(--blue));
+  font-weight: 500;
+}
+
+
 .cinta-contacto-desc a p {
   color: rgb(var(--dark-blue));
 }
