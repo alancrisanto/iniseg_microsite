@@ -104,21 +104,17 @@
   padding-right: 0.35rem;
 }
 
-.header-video {
+/* .header-video {
   position: relative;
-}
+} */
 
 .header-video-text {
-  position: absolute;
-  inset: 50% auto auto 0;
-  transform: translate(0, -50%);
   text-align: left;
-  display: none;
 }
 
 .header-video-text h1,
 .video-text-movil h2 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 500;
 }
 

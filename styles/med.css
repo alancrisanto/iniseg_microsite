@@ -31,14 +31,8 @@
 ---------------------------------------------------------------------*/
 
   .swiper-slide-header img {
-    aspect-ratio: 3/1;
-    max-height: 500px;
-  }
-
-  .header-video-text {
-    display: initial;
-    width: min(50%, 1000px);
-    /* padding-left: 4rem; */
+    aspect-ratio: 3/2;
+    max-height: 350px;
   }
 
   .header-video-text p {
@@ -48,6 +42,38 @@
 
   .video-text-movil {
     display: none;
+  }
+
+  .slider-container-header picture img {
+    clip-path: polygon(100% 0, 100% 100%, 11% 100%, 0 75%, 28% 0);
+  }
+
+  .slider-container-header picture {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .slider-container-header picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    width: 100%;
+    background-color: rgba(var(--dark-grey), 0.4);
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 11% 100%, 0 75%, 28% 0);
+  }
+
+  .slider-container-header picture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 11% 100%, 0 75%, 28% 0);
+    z-index: -1;
   }
 
   /* cinta curso */
