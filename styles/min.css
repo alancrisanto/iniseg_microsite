@@ -170,28 +170,21 @@ aside {
   background-color: rgb(var(--grey));
 }
 
-aside .form-body-title {
+aside .form-body-title,
+.form-body-title-mobile {
   color: white;
   background-color: rgb(var(--blue));
 }
 
 aside .form-container-body .form-icons-list a i {
   font-size: 1.5rem;
-  color: rgb(var(--dark-grey))
+  color: rgb(var(--dark-grey));
 }
 
 aside .form-container-body .form-icons-list a i:hover {
-  color: rgb(var(--blue))
-}
-
-/* aside .form-container-body .form-icons-list a img {
-  max-width: 25px;
-} */
-
-/* aside .form-container-body .form-icons-list a:hover img {
-  transform: scale(1.1);
+  color: rgb(var(--blue));
   cursor: pointer;
-} */
+}
 
 /* 
 --------------------------------------------------------------------
@@ -713,7 +706,7 @@ aside .form-container-body .form-icons-list a i:hover {
   display: block;
   inset: 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.2);
   bottom: 0;
 }
 
