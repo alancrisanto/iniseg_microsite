@@ -56,28 +56,6 @@
   object-position: center;
 }
 
-.swiper-pagination-header .swiper-pagination-bullet {
-  border-radius: 0;
-  width: 15%;
-  height: 4px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  opacity: 0.4;
-}
-
-.swiper-pagination-header .swiper-pagination-bullet:nth-child(2n + 1) {
-  background: rgb(var(--red));
-}
-
-.swiper-pagination-header .swiper-pagination-bullet:nth-child(2n + 2) {
-  background: rgb(var(--main-yellow));
-}
-
-.swiper-pagination-header .swiper-pagination-bullet-active {
-  opacity: 1;
-}
-
 .swiper-button-prev-header,
 .swiper-button-next-header {
   opacity: 0;
