@@ -773,6 +773,11 @@ aside .form-container-body .form-icons-list a i:hover {
   border: 1px solid rgb(var(--middle-grey));
 }
 
+.modal-form-img {
+  max-width: 160px;
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------------
 ### BOTÓN SOLICITAR INFORMACIÓN
 ---------------------------------------------------------------------*/
