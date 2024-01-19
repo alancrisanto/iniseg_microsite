@@ -776,14 +776,19 @@ aside .form-container-body .form-icons-list a i:hover {
 /*--------------------------------------------------------------------
 ### BOTÓN SOLICITAR INFORMACIÓN
 ---------------------------------------------------------------------*/
-.static-btn a {
+.static-btn .static-btn-info {
   background-color: rgb(var(--blue));
 }
 
-.static-btn a:hover {
+.static-btn-wtsap a i {
+  color: rgb(70, 198, 85);
+}
+
+
+/* .static-btn a:hover {
   background-color: rgb(var(--dark-blue));
   transition: background-color 600ms;
-}
+} */
 
 /* Arrows */
 .arrow-icons i:not(:first-child) {
@@ -791,7 +796,7 @@ aside .form-container-body .form-icons-list a i:hover {
 }
 
 .arrow-icons i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .arrow-icons i::before {
