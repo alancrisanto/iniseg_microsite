@@ -523,15 +523,6 @@ aside .form-container-body .form-icons-list a i:hover {
   object-fit: contain;
 }
 
-.container-6-card a:hover svg {
-  transform: scale(1.2);
-}
-
-.container-6-card a:hover svg path:first-child {
-  fill: rgb(var(--blue));
-  fill-opacity: 1;
-}
-
 /* 
 --------------------------------------------------------------------
 ### CONTAINER 7
