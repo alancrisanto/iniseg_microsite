@@ -32,6 +32,7 @@
   transform: translateX(0);
 }
 
+
 /* 
 --------------------------------------------------------------------
 ### HEADER VIDEO 
@@ -438,6 +439,24 @@ aside .form-container-body .form-icons-list a i:hover {
   box-shadow: 4px 5px 17px -4px rgb(var(--dark-blue));
 }
 
+/* Modales */
+
+.modal-docentes-picture {
+  background: hsla(186, 33%, 94%, 1);
+  background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1);
+}
+
+.modal-docentes-picture img {
+  max-width: 150px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
 /* 
 --------------------------------------------------------------------
 ### CONTAINER 5
@@ -825,7 +844,6 @@ aside .form-container-body .form-icons-list a i:hover {
     color: white;
   }
 }
-
 
 /* --************************************************************--- */
 /*--------------------------------------------------------------------
