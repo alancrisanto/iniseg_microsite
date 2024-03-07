@@ -67,7 +67,7 @@ const logo = document.querySelector(".logo");
 const navbarMenu = document.querySelector("nav");
 const navbarStyle = window.getComputedStyle(navbarMenu);
 
-const isIndexPage = currentPagePath === "/nuevomicrosite2023/" || currentPagePath === "/";
+const isIndexPage = currentPagePath === "/iniseg_microsite/" || currentPagePath === "/";
 
 // SELECCIONAR IMAGEN AL ABRIR LA PÁGINA
 
